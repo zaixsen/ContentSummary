@@ -34,6 +34,7 @@ public class MapMgr : MonoBehaviour
             for (int j = -1; j <= 1; j++)
             {
                 MapBlock mapBlock = Instantiate(Resources.Load<MapBlock>("Prefab/MapBlock"));
+                mapBlock.transform.SetParent(transform);
                 MapIndex mapIndex = new MapIndex(i, j);
                 mapBlock.CreatMap(mapIndex);
                 dic_mapBlock.Add(mapBlock, mapIndex);

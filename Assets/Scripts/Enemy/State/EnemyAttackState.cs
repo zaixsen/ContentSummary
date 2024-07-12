@@ -12,7 +12,6 @@ public class EnemyAttackState : EnemyStateBase
         enemyController.PlayAnimation("Attack");
     }
 
-
     public override void Update()
     {
         base.Update();

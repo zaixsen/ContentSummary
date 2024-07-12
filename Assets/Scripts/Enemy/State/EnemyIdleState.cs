@@ -31,7 +31,6 @@ public class EnemyIdleState : EnemyStateBase
         {
             if (idleTime >= 1)
             {
-                Debug.Log("idle×ª¹¥»÷");
                 enemyController.SwitchState(EnemyState.Attack);
             }
         }
