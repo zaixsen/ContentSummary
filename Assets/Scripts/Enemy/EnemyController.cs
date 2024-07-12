@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour, IStateMachineOwner
 
     public float fllowDistance = 3f;
 
-    public float attackDistance = 1.5f;
+    public float attackDistance = 1f;
 
     [HideInInspector] public float playerDistance;
 
@@ -28,6 +28,7 @@ public class EnemyController : MonoBehaviour, IStateMachineOwner
     EnemyState enemyState;
 
     [HideInInspector] public AnimatorStateInfo animInfo;
+    [HideInInspector] public bool isAtk;
 
     private void Start()
     {
@@ -69,6 +70,7 @@ public class EnemyController : MonoBehaviour, IStateMachineOwner
         characterController.Move(new Vector3(0, gravity * Time.deltaTime, 0));
         stateMachine.currentState.Update();
 
+        isAtk = playerDistance < attackDistance;
         animInfo = animator.GetCurrentAnimatorStateInfo(0);
     }
 

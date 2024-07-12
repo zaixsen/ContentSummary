@@ -25,6 +25,4 @@ public class EnemyAttackState : EnemyStateBase
             enemyController.SwitchState(EnemyState.Idle);
         }
     }
-
-
 }

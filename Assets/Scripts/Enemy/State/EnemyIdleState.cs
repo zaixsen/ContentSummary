@@ -22,22 +22,24 @@ public class EnemyIdleState : EnemyStateBase
         {
             if (idleTime >= 2)
             {
-
                 enemyController.SwitchState(EnemyState.Walk);
             }
-        }
-
-        //×·»÷
-        if (enemyController.playerDistance < enemyController.fllowDistance)
-        {
-            enemyController.SwitchState(EnemyState.Walk);
         }
 
         //¹¥»÷
         if (enemyController.playerDistance < enemyController.attackDistance)
         {
-            enemyController.SwitchState(EnemyState.Attack);
+            if (idleTime >= 1)
+            {
+                Debug.Log("idle×ª¹¥»÷");
+                enemyController.SwitchState(EnemyState.Attack);
+            }
         }
 
+        //×·»÷
+        if (enemyController.playerDistance < enemyController.fllowDistance && !enemyController.isAtk)
+        {
+            enemyController.SwitchState(EnemyState.Walk);
+        }
     }
 }

@@ -52,7 +52,7 @@ public class EnemyWalkState : EnemyStateBase
             enemyController.characterController.Move(fllowDir * Time.deltaTime);
         }
 
-        if (enemyController.playerDistance < enemyController.attackDistance)
+        if (enemyController.isAtk)
         {
             enemyController.SwitchState(EnemyState.Attack);
         }
