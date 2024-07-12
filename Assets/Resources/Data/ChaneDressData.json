@@ -1,0 +1,86 @@
+﻿[
+  {
+    "id": 1,
+    "boneType": 1,
+    "icon": "Icon/head1",
+    "prefab": "Dress/Tou_0"
+  },
+  {
+    "id": 2,
+    "boneType": 1,
+    "icon": "Icon/head2",
+    "prefab": "Dress/Tou_1"
+  },
+  {
+    "id": 3,
+    "boneType": 1,
+    "icon": "Icon/head3",
+    "prefab": "Dress/Tou_2"
+  },
+  {
+    "id": 4,
+    "boneType": 1,
+    "icon": "Icon/head4",
+    "prefab": "Dress/Tou_3"
+  },
+  {
+    "id": 5,
+    "boneType": 1,
+    "icon": "Icon/head5",
+    "prefab": "Dress/Tou_4"
+  },
+  {
+    "id": 6,
+    "boneType": 2,
+    "icon": "Icon/Dress1",
+    "prefab": "Dress/YiFu_0"
+  },
+  {
+    "id": 7,
+    "boneType": 2,
+    "icon": "Icon/Dress2",
+    "prefab": "Dress/YiFu_1"
+  },
+  {
+    "id": 8,
+    "boneType": 2,
+    "icon": "Icon/Dress3",
+    "prefab": "Dress/YiFu_2"
+  },
+  {
+    "id": 9,
+    "boneType": 2,
+    "icon": "Icon/Dress4",
+    "prefab": "Dress/YiFu_3"
+  },
+  {
+    "id": 10,
+    "boneType": 3,
+    "icon": "Icon/trousers1",
+    "prefab": "Dress/Tui_0"
+  },
+  {
+    "id": 11,
+    "boneType": 3,
+    "icon": "Icon/trousers2",
+    "prefab": "Dress/Tui_1"
+  },
+  {
+    "id": 12,
+    "boneType": 3,
+    "icon": "Icon/trousers3",
+    "prefab": "Dress/Tui_2"
+  },
+  {
+    "id": 13,
+    "boneType": 3,
+    "icon": "Icon/trousers4",
+    "prefab": "Dress/Tui_3"
+  },
+  {
+    "id": 14,
+    "boneType": 3,
+    "icon": "Icon/trousers5",
+    "prefab": "Dress/Tui_4"
+  }
+]
